@@ -45,6 +45,6 @@ Este es un proyecto construido para la Facultad de la UNLA para el Ciclo de Lice
 ## Recursos Utilizados
 
 ### Iconografía
-    Link a la libreria: [Favicon](https://www.svgrepo.com/svg/227410/lighthouse)
-    Licencia: [CC0 License](https://www.svgrepo.com/page/licensing#CC0)
+Link a la libreria: [Favicon](https://www.svgrepo.com/svg/227410/lighthouse)
+Licencia: [CC0 License](https://www.svgrepo.com/page/licensing#CC0)
 
