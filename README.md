@@ -1,10 +1,12 @@
 <p align="center">
- <img width="100px" src="https://asset.cloudinary.com/dwqpazvxt/060cfef1b26cbcb66d83ec3381960700" align="center" alt="El Faro Educar" />
+ <img width="100px" src="https://raw.githubusercontent.com/dibuyo/elfaroeducar/main/public/images/elfaroeducar-light.svg" align="center" alt="El Faro Educar" />
  <h2 align="center">El Faro Educar</h2>
  <p align="center">Sistema de monitoreo y alertas temprano en la detección de mensajes ofensivos, ciberacoso (grooming) y ciberbullying en las redes sociales.</p>
 </p>
-  <p align="center">
-    [![Crates.io license shield](https://img.shields.io/crates/l/logos.svg)](https://crates.io/crates/logos)
+  <a align="center">
+    <a href="https://shields.io/">
+        <img src="https://img.shields.io/crates/l/logos.svg" alt="Crates.io license shield">
+    </a>
     ![Test](https://github.com/dibuyo/elfaroeducar/workflows/Test/badge.svg?branch=master)
     <a href="https://github.com/dibuyo/elfaroeducar/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/dibuyo/elfaroeducar" />
