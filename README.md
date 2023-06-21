@@ -33,7 +33,10 @@
     <a href="https://github.com/dibuyo/elfaroeducar/discussions">Hacer una pregunta</a>
   </p>
 
-[![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions)
+[![push](https://github.com/dibuyo/elfaroeducar/workflows/push/badge.svg?branch=master&event=push)](https://github.com/dibuyo/elfaroeducar/actions)
+[![Join the chat at https://gitter.im/dibuyo/elfaroeducar](https://badges.gitter.im/dibuyo/elfaroeducar.svg)](https://gitter.im/dibuyo/elfaroeducar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dibuyo/elfaroeducar)](https://goreportcard.com/report/github.com/dibuyo/elfaroeducar)
+[![awesome-runners](https://img.shields.io/badge/listed%20on-awesome--runners-blue.svg)](https://github.com/jonico/awesome-runners)
 
 # Proyecto El Faro Educar
 
