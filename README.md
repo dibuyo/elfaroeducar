@@ -21,7 +21,6 @@
     </a>
     <br />
   </p>
-    [![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions)
   <p align="center">
     <a href="#demo">Ver Demo</a>
     ·
@@ -33,6 +32,8 @@
     ·
     <a href="https://github.com/dibuyo/elfaroeducar/discussions">Hacer una pregunta</a>
   </p>
+
+[![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions)
 
 # Proyecto El Faro Educar
 
