@@ -3,7 +3,7 @@
  <h2 align="center">El Faro Educar</h2>
  <p align="center">Sistema de monitoreo y alertas temprano en la detección de mensajes ofensivos, ciberacoso (grooming) y ciberbullying en las redes sociales.</p>
 </p>
-  <a align="center">
+  <p align="center">
     <a href="https://shields.io/">
         <img src="https://img.shields.io/crates/l/logos.svg" alt="Crates.io license shield">
     </a>
@@ -19,10 +19,9 @@
     <a href="https://github.com/dibuyo/elfaroeducar/pulls">
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/dibuyo/elfaroeducar?color=0088ff" />
     </a>
-    [![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions)
     <br />
   </p>
-
+    [![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions)
   <p align="center">
     <a href="#demo">Ver Demo</a>
     ·
@@ -34,7 +33,6 @@
     ·
     <a href="https://github.com/dibuyo/elfaroeducar/discussions">Hacer una pregunta</a>
   </p>
-</p>
 
 # Proyecto El Faro Educar
 
