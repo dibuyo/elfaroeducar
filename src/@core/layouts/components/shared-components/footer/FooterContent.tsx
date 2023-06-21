@@ -25,8 +25,8 @@ const FooterContent = () => {
           ❤️
         </Box>
         {` by `}
-        <LinkStyled target='_blank' href='https://waynilabs.ar'>
-          Wayni Team
+        <LinkStyled target='_blank' href='https://github.com/dibuyo'>
+          dibuyo
         </LinkStyled>
       </Typography>
       {hidden ? null : (

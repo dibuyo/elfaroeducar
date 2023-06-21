@@ -19,6 +19,7 @@ import OutlinedInput from '@mui/material/OutlinedInput'
 import { styled, useTheme } from '@mui/material/styles'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiFormControlLabel, { FormControlLabelProps } from '@mui/material/FormControlLabel'
+import MenuItem from '@mui/material/MenuItem'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
@@ -28,6 +29,9 @@ import BlankLayout from 'src/@core/layouts/BlankLayout'
 
 // ** Hooks
 import { useSettings } from 'src/@core/hooks/useSettings'
+
+// ** Custom Component Import
+import CustomTextField from 'src/@core/components/mui/text-field'
 
 // ** Demo Imports
 import FooterIllustrationsV2 from 'src/views/pages/auth/FooterIllustrationsV2'
@@ -74,6 +78,11 @@ const FormControlLabel = styled(MuiFormControlLabel)<FormControlLabelProps>(({ t
   }
 }))
 
+const LogoIllustration = styled('img')(() => ({
+  zIndex: 2,
+  maxHeight: 32
+}))
+
 const Register = () => {
   // ** States
   const [showPassword, setShowPassword] = useState<boolean>(false)
@@ -105,7 +114,7 @@ const Register = () => {
         >
           <RegisterIllustration
             alt='register-illustration'
-            src={`/images/pages/${imageSource}-${theme.palette.mode}.png`}
+            src={`/images/pages/${imageSource}-${theme.palette.mode}.svg`}
           />
           <FooterIllustrationsV2 />
         </Box>
@@ -121,47 +130,27 @@ const Register = () => {
           }}
         >
           <Box sx={{ width: '100%', maxWidth: 400 }}>
-            <svg width={34} height={23.375} viewBox='0 0 32 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <path
-                fillRule='evenodd'
-                clipRule='evenodd'
-                fill={theme.palette.primary.main}
-                d='M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z'
-              />
-              <path
-                fill='#161616'
-                opacity={0.06}
-                fillRule='evenodd'
-                clipRule='evenodd'
-                d='M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z'
-              />
-              <path
-                fill='#161616'
-                opacity={0.06}
-                fillRule='evenodd'
-                clipRule='evenodd'
-                d='M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z'
-              />
-              <path
-                fillRule='evenodd'
-                clipRule='evenodd'
-                fill={theme.palette.primary.main}
-                d='M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z'
-              />
-            </svg>
+            <LogoIllustration alt='login-illustration' src={`/images/elfaroeducar-${theme.palette.mode}.svg`} />
             <Box sx={{ my: 6 }}>
               <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
-                Adventure starts here 🚀
+                ¡Registrate en El Faro Educar! 🚀
               </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>Make your app management easy and fun!</Typography>
+              <Typography sx={{ color: 'text.secondary' }}>Estas por registrarte a la plataforma educativa El Faro EducAr. Es importante registrar bien tu Rol dentro de la plataforma. Ya que tendras diferentes acciones dependiendo de tu rol.</Typography>
             </Box>
             <form noValidate autoComplete='off' onSubmit={e => e.preventDefault()}>
-              <TextField autoFocus fullWidth sx={{ mb: 4 }} label='Username' placeholder='johndoe' />
-              <TextField fullWidth label='Email' sx={{ mb: 4 }} placeholder='user@email.com' />
+              <CustomTextField fullWidth select defaultValue='teacher' placeholder='Maestro' label='' sx={{ mb: 4 }}>
+                <MenuItem value="establishment">Institución</MenuItem>
+                <MenuItem value="teacher">Maestro</MenuItem>
+                <MenuItem value="guardian">Padre/Tutor</MenuItem>
+                <MenuItem value="student">Estudiante</MenuItem>
+              </CustomTextField>
+              <TextField autoFocus fullWidth sx={{ mb: 4 }} label='Nombre' placeholder='Tu nombre' />
+              <TextField fullWidth sx={{ mb: 4 }} label='Apellido' placeholder='Tu Apellido' />
+              <TextField fullWidth label='Correo Electrónico' sx={{ mb: 4 }} placeholder='user@email.com' />
               <FormControl fullWidth>
-                <InputLabel htmlFor='auth-login-v2-password'>Password</InputLabel>
+                <InputLabel htmlFor='auth-login-v2-password'>Contraseña</InputLabel>
                 <OutlinedInput
-                  label='Password'
+                  label='Contraseña'
                   id='auth-login-v2-password'
                   type={showPassword ? 'text' : 'password'}
                   endAdornment={
@@ -184,22 +173,22 @@ const Register = () => {
                 label={
                   <>
                     <Typography variant='body2' component='span'>
-                      I agree to{' '}
+                      Acepto las {' '}
                     </Typography>
                     <LinkStyled href='/' onClick={e => e.preventDefault()}>
-                      privacy policy & terms
+                      políticas & términos y condiciones
                     </LinkStyled>
                   </>
                 }
               />
               <Button fullWidth size='large' type='submit' variant='contained' sx={{ mb: 4 }}>
-                Sign up
+                Enviar
               </Button>
               <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
-                <Typography sx={{ color: 'text.secondary', mr: 2 }}>Already have an account?</Typography>
+                <Typography sx={{ color: 'text.secondary', mr: 2 }}>¿Ya tenes cuenta?</Typography>
                 <Typography variant='body2'>
                   <LinkStyled href='/login' sx={{ fontSize: '1rem' }}>
-                    Sign in instead
+                    Iniciar sesión aquí
                   </LinkStyled>
                 </Typography>
               </Box>
@@ -219,14 +208,6 @@ const Register = () => {
                 </IconButton>
                 <IconButton href='/' component={Link} sx={{ color: '#1da1f2' }} onClick={e => e.preventDefault()}>
                   <Icon icon='mdi:twitter' />
-                </IconButton>
-                <IconButton
-                  href='/'
-                  component={Link}
-                  onClick={e => e.preventDefault()}
-                  sx={{ color: theme => (theme.palette.mode === 'light' ? '#272727' : 'grey.300') }}
-                >
-                  <Icon icon='mdi:github' />
                 </IconButton>
                 <IconButton href='/' component={Link} sx={{ color: '#db4437' }} onClick={e => e.preventDefault()}>
                   <Icon icon='mdi:google' />

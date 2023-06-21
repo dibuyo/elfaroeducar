@@ -3,7 +3,7 @@ import {styled, useTheme} from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 import CircularProgress from '@mui/material/CircularProgress'
 
-const LogoIllustration = styled('img')(({ theme }) => ({
+const LogoIllustration = styled('img')(() => ({
     zIndex: 2,
     maxHeight: 64
 }))

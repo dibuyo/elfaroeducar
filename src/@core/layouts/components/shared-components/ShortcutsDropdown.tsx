@@ -99,7 +99,7 @@ const ShortcutsDropdown = (props: Props) => {
   return (
     <Fragment>
       <IconButton color='inherit' aria-haspopup='true' onClick={handleDropdownOpen} aria-controls='customized-menu'>
-        <Icon fontSize='1.5rem' icon='tabler:layout-grid-add' />
+        <Icon fontSize='1.5rem' icon='mdi:register-outline' />
       </IconButton>
       <Menu
         anchorEl={anchorEl}
@@ -128,10 +128,10 @@ const ShortcutsDropdown = (props: Props) => {
               '& svg': { color: 'text.secondary' }
             }}
           >
-            <Typography variant='h6'>Shortcuts</Typography>
-            <Tooltip title='Add Shortcut' placement='top'>
+            <Typography variant='h6'>Registros</Typography>
+            <Tooltip title='Ingreso a la plataforma' placement='top'>
               <IconButton size='small'>
-                <Icon fontSize='1.5rem' icon='tabler:apps' />
+                <Icon fontSize='1.5rem' icon='material-symbols:login' />
               </IconButton>
             </Tooltip>
           </Box>

@@ -39,7 +39,7 @@ const MenuHeaderWrapper = styled(Box)<BoxProps>(({ theme }) => ({
   minHeight: theme.mixins.toolbar.minHeight
 }))
 
-const LogoIllustration = styled('img')(({ theme }) => ({
+const LogoIllustration = styled('img')(() => ({
   zIndex: 2,
   maxHeight: 32
 }))
