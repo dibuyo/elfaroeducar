@@ -19,6 +19,7 @@
     <a href="https://github.com/dibuyo/elfaroeducar/pulls">
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/dibuyo/elfaroeducar?color=0088ff" />
     </a>
+    [![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions)
     <br />
   </p>
 
@@ -34,8 +35,6 @@
     <a href="https://github.com/dibuyo/elfaroeducar/discussions">Hacer una pregunta</a>
   </p>
 </p>
-
-[![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions)
 
 # Proyecto El Faro Educar
 
