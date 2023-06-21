@@ -7,7 +7,6 @@
     <a href="https://shields.io/">
         <img src="https://img.shields.io/crates/l/logos.svg" alt="Crates.io license shield">
     </a>
-    ![Test](https://github.com/dibuyo/elfaroeducar/workflows/Test/badge.svg?branch=master)
     <a href="https://github.com/dibuyo/elfaroeducar/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/dibuyo/elfaroeducar" />
     </a>
@@ -35,6 +34,8 @@
     <a href="https://github.com/dibuyo/elfaroeducar/discussions">Hacer una pregunta</a>
   </p>
 </p>
+
+[![push](https://github.com/nektos/act/workflows/push/badge.svg?branch=master&event=push)](https://github.com/nektos/act/actions)
 
 # Proyecto El Faro Educar
 
