@@ -42,9 +42,9 @@
 
 Este es un proyecto construido para la Facultad de la UNLA para el Ciclo de Licenciatura en Tecnologías Digitales para la Educación.
 
-## Recursos Utilizados
+## Recursos Utilizados ##
 
-### Iconografía
+### Iconografía ###
 Link a la libreria: [Favicon](https://www.svgrepo.com/svg/227410/lighthouse)
 Licencia: [CC0 License](https://www.svgrepo.com/page/licensing#CC0)
 
