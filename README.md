@@ -44,7 +44,20 @@ Este es un proyecto construido para la Facultad de la UNLA para el Ciclo de Lice
 
 ## Recursos Utilizados ##
 
+### Ilustraciones ###
+
+[Storyset](https://storyset.com/education)
+
 ### Iconografía ###
 Link a la libreria: [Favicon](https://www.svgrepo.com/svg/227410/lighthouse)
 
 Licencia: [CC0 License](https://www.svgrepo.com/page/licensing#CC0)
+
+### DNS ###
+[Cloudflare](https://cloudflare.com)
+
+### E-MAILS ###
+[Zoho](https://zoho.com)
+
+### Dominio ###
+[Nic.ar](https://nic.ar/verificar-dominio)
