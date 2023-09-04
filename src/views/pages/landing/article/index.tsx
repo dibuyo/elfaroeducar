@@ -137,7 +137,7 @@ const HelpCenterArticle = ({ articles, activeArticle, activeSubcategory }: Props
             <Typography variant='h5' sx={{ mb: 1.5 }}>
               {activeArticle.title}
             </Typography>
-            <Typography sx={{ mb: 4, color: 'text.secondary' }}>55 People found this helpful</Typography>
+            <Typography sx={{ mb: 4, color: 'text.secondary' }}>5 personas encontraron útil esta información.</Typography>
             <div>
               <Button variant='contained' size='small' sx={{ mr: 2.5, p: 1.5, minWidth: 28 }}>
                 <Icon fontSize='1.125rem' icon='tabler:thumb-up' />

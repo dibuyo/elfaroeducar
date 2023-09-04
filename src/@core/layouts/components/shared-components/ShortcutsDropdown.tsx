@@ -130,7 +130,7 @@ const ShortcutsDropdown = (props: Props) => {
           >
             <Typography variant='h6'>Registros</Typography>
             <Tooltip title='Ingreso a la plataforma' placement='top'>
-              <IconButton size='small'>
+              <IconButton size='small' href='/login'>
                 <Icon fontSize='1.5rem' icon='material-symbols:login' />
               </IconButton>
             </Tooltip>

@@ -126,6 +126,7 @@ const HelpCenterLandingHeader = ({ data, allArticles }: Props) => {
           handleRedirection(option as HelpCenterSubcategoryArticlesType)
         }
         onInputChange={(event, value: string) => {
+            if(!event) return;
           setValue(value)
           setOpen(!!(event.target as HTMLInputElement).value)
         }}
@@ -133,6 +134,7 @@ const HelpCenterLandingHeader = ({ data, allArticles }: Props) => {
           <CustomTextField
             {...params}
             size='medium'
+            autoComplete='no'
             value={value}
             placeholder='Escribi alguna prégunta si tenes duda...'
             onChange={(event: ChangeEvent<HTMLInputElement>) => setValue(event.target.value)}

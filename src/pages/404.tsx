@@ -16,6 +16,9 @@ import BlankLayout from 'src/@core/layouts/BlankLayout'
 // ** Demo Imports
 import FooterIllustrations from 'src/views/pages/misc/FooterIllustrations'
 
+// ** Icon Imports
+import Icon from "../@core/components/icon";
+
 // ** Styled Components
 const BoxWrapper = styled(Box)<BoxProps>(({ theme }) => ({
   [theme.breakpoints.down('md')]: {
@@ -42,13 +45,13 @@ const Error404 = () => {
       <Box sx={{ p: 5, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
         <BoxWrapper>
           <Typography variant='h4' sx={{ mb: 1.5 }}>
-            Page Not Found :(
+            <Icon icon='nonicons:not-found-16' fontSize={20} /> No se encontro <Icon icon='nonicons:not-found-16' fontSize={20} />
           </Typography>
           <Typography sx={{ mb: 6, color: 'text.secondary' }}>
-            Oops! 😖 The requested URL was not found on this server.
+            Ups! 😖 La la página que estas buscando not esta disponible en la plataforma.
           </Typography>
           <Button href='/' component={Link} variant='contained'>
-            Back to Home
+            Volver al home
           </Button>
         </BoxWrapper>
         <Img height='500' alt='error-illustration' src='/images/pages/404.png' />
