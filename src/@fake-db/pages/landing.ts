@@ -2,7 +2,6 @@
 import mock from 'src/@fake-db/mock'
 
 // ** ThemeConfig Import
-import themeConfig from 'src/configs/themeConfig'
 
 // ** Types
 import {
